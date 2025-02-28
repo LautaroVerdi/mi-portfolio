@@ -104,7 +104,7 @@ export const portfolioData = {
       iosLink: "https://apps.apple.com/ar/app/agroinfinito/id1670767111",
     },
     {
-      title: "ANPANP - Áreas Naturales Protegidas",
+      title: "ANP - Áreas Naturales Protegidas",
       date: "01/2023 - 12/2023",
       role: "Full stack",
       responsibilities: [
