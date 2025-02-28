@@ -1,0 +1,222 @@
+.projects {
+  text-align: center;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr; /* Una sola columna */
+  gap: 20px;
+}
+
+.projectCard {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ancho adaptable al contenedor */
+  max-width: 700px; /* Ancho máximo para pantallas grandes */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.3s;
+  margin: 0 auto; /* Centra las tarjetas */
+  padding: 20px; /* Añadido padding en la tarjeta */
+}
+
+.projectCard:hover {
+  transform: translateY(-5px);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.cardHeader h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0; /* Eliminar margen en el título */
+}
+
+.date {
+  font-size: 14px;
+  color: darkgray;
+  margin-left: 20px; /* Para que no quede pegado al título */
+}
+
+.roleAndResponsibilities {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.responsibilities ul {
+  list-style-type: disc;
+  margin-left: 20px; /* Alineación a la izquierda */
+  padding-left: 20px; /* Añadir espacio extra a la izquierda */
+  text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+}
+
+.responsibilities ul li {
+  margin-bottom: 10px; /* Espacio entre los ítems de la lista */
+}
+
+.imageContainer {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center; /* Centra la imagen horizontalmente */
+}
+
+.projectImage {
+  width: 75%; /* Establece el ancho de la imagen al 75% del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+.techStack {
+  display: flex;
+  justify-content: center; /* Centra los logos horizontalmente */
+  align-items: center; /* Centra los logos verticalmente */
+  gap: 15px; /* Espacio entre los elementos */
+  margin-top: 15px;
+  width: 100%; /* Aseguramos que ocupe todo el ancho disponible */
+  flex-wrap: wrap; /* Permite que los logos se ajusten a varias líneas si es necesario */
+}
+
+.techItem {
+  display: flex;
+  justify-content: center; /* Centra el contenido dentro de cada item */
+  align-items: center; /* Asegura la alineación vertical */
+  gap: 10px; /* Espacio entre el logo y el texto */
+  border: 1px solid darkgray; /* Borde blanco alrededor de cada item */
+  border-radius: 30px; /* Bordes redondeados */
+  padding: 5px 10px; /* Padding alrededor */
+  background-color: transparent; /* Fondo transparente por defecto */
+}
+
+.techLogo {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; /* Hace que el logo sea circular */
+  fill: darkgray; /* Fondo blanco */
+}
+
+.techLogo img {
+  width: 100%; /* La imagen ocupa todo el contenedor */
+  height: 100%; /* La imagen ocupa todo el contenedor */
+  object-fit: contain; /* Mantiene la proporción de la imagen */
+}
+
+.techName {
+  color: darkgray;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.techItem:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Fondo sutil al pasar el mouse */
+}
+
+.projectLinks {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center; /* Esto asegura que los enlaces estén centrados */
+  flex-wrap: wrap;
+  margin-top: 20px;
+  width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho disponible */
+}
+
+.projectLink {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra los íconos y texto dentro del enlace */
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.icon {
+  margin-right: 10px; /* Espacio entre el ícono y el texto */
+  color: inherit;
+  font-size: 30px; /* Tamaño del ícono */
+}
+
+.projectLink:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #282c34;
+}
+
+.projectLink:hover .icon {
+  color: #282c34; /* Cambia el color del ícono cuando el enlace se pasa por encima */
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+  .projects {
+    padding: 20px; /* Reducir el padding */
+  }
+
+  .projectCard {
+    width: 90%; /* Las tarjetas ocupan todo el ancho disponible en móviles */
+    padding: 15px; /* Reducir padding */
+    max-width: 90%; /* Elimina el máximo ancho para pantallas pequeñas */
+  }
+
+  .cardHeader {
+    flex-direction: column; /* Apilar título y fecha en lugar de alinearlos horizontalmente */
+    align-items: flex-start;
+  }
+
+  .cardHeader h3 {
+    font-size: 16px; /* Reducir tamaño del título */
+  }
+
+  .date {
+    margin-left: 0; /* Quitar margen en dispositivos móviles */
+  }
+
+  .responsibilities ul {
+    margin-left: 10px; /* Alineación a la izquierda */
+    padding-left: 10px; /* Añadir espacio extra a la izquierda */
+    text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+  }
+
+  .techStack {
+    gap: 10px; /* Reducir el espacio entre los logos */
+  }
+
+  .techLogo {
+    width: 25px; /* Reducir el tamaño de los logos */
+    height: 25px;
+  }
+
+  .techName {
+    font-size: 12px; /* Reducir el tamaño del texto */
+  }
+
+  .projectLinks {
+    gap: 10px;
+  }
+
+  .projectLink {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    border: 1px solid #fff;
+  }
+
+  .icon {
+    margin-right: 2px;
+    font-size: 20px !important;
+  }
+}

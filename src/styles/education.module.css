@@ -1,0 +1,61 @@
+.education {
+  text-align: center;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Asegura que todo esté centrado */
+}
+
+.eduItem {
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Alinea verticalmente */
+  gap: 30px; /* Espacio entre el texto y la imagen */
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1); /* Sin fondo */
+  width: 100%; /* Ancho adaptable al contenedor */
+  max-width: 700px; /* Ancho máximo para pantallas grandes */
+}
+
+.textContainer {
+  flex: 1;
+  text-align: right; /* Mantiene el texto alineado */
+  max-width: 350px; /* Limita el tamaño del texto */
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  margin-left: 30px;
+}
+
+.educationImage {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.eduItem span {
+  font-style: italic;
+  color: darkgray;
+}
+
+/* 📱 Estilos para pantallas más pequeñas */
+@media (max-width: 600px) {
+  .eduItem {
+    flex-direction: column; /* Apila los elementos en mobile */
+    text-align: center;
+    gap: 15px; /* Reduce el espacio entre elementos */
+  }
+
+  .textContainer {
+    text-align: center; /* Centra el texto en mobile */
+    max-width: 100%;
+  }
+
+  .educationImage {
+    max-width: 150px; /* Reduce el tamaño de la imagen en mobile */
+  }
+}

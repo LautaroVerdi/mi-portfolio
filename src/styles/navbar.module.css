@@ -1,0 +1,82 @@
+.navbar {
+  margin-top: 5px;
+  position: fixed;
+  top: 0;
+  background-color: #282c34;
+  padding: 10px 20px;
+  z-index: 1000;
+  transition: background-color 0.3s, border-radius 0.3s;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar.scrolled {
+  background-color: #272a2e;
+  border-radius: 50px;
+}
+
+.navbarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 0 10px;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navList li {
+  display: inline;
+}
+
+.navList a {
+  text-decoration: none;
+  color: darkgray;
+  font-size: 18px;
+  transition: color 0.3s, transform 0.3s;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.navList a:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+.navList .active {
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+  .navList {
+    display: block; /* Muestra las opciones de navegación en columna */
+    gap: 10px; /* Espacio entre las opciones */
+    text-align: center; /* Alinea las opciones al centro */
+  }
+
+  .navList a {
+    font-size: 14px;
+    border-radius: 5px;
+  }
+
+  .navbarContainer {
+    padding: 0; /* Elimina el padding horizontal */
+  }
+
+  /* Opcional: Agregar un menú de hamburguesa para móviles */
+  .navbar {
+    padding: 10px; /* Ajusta el padding para la versión móvil */
+  }
+
+  .navList {
+    padding: 0; /* Elimina el padding de la lista en móviles */
+  }
+}
