@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center; /* Asegura que todo esté centrado */
+  gap: 20px;
 }
 
 .eduItem {
@@ -39,7 +40,7 @@
 
 .eduItem span {
   font-style: italic;
-  color: darkgray;
+  color: #b4b4b4;
 }
 
 /* 📱 Estilos para pantallas más pequeñas */

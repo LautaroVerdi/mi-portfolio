@@ -3,7 +3,6 @@ import Navbar from "./components/Navbar.tsx";
 import Hero from "./components/Hero.tsx";
 import Projects from "./components/Projects.tsx";
 import Education from "./components/Education.tsx";
-import Contact from "./components/Contact.tsx";
 import "./styles/global.css";
 
 const App: React.FC = () => {
@@ -13,14 +12,11 @@ const App: React.FC = () => {
       <section id="hero">
         <Hero />
       </section>
-      <section id="contact">
-        <Contact />
+      <section id="education">
+        <Education />
       </section>
       <section id="projects">
         <Projects />
-      </section>
-      <section id="education">
-        <Education />
       </section>
     </>
   );

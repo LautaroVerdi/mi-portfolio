@@ -37,7 +37,7 @@
 
 .navList a {
   text-decoration: none;
-  color: darkgray;
+  color: #b4b4b4;
   font-size: 18px;
   transition: color 0.3s, transform 0.3s;
   padding: 10px 15px;
@@ -54,29 +54,30 @@
   transform: scale(1.1);
 }
 
+.navList .desactive {
+  color: #b4b4b4;
+}
+
 /* Media Query para dispositivos móviles */
 @media (max-width: 768px) {
   .navList {
-    display: block; /* Muestra las opciones de navegación en columna */
-    gap: 10px; /* Espacio entre las opciones */
-    text-align: center; /* Alinea las opciones al centro */
+    display: flex; /* Mantener en una línea */
+    flex-wrap: nowrap; /* Evitar que los elementos se dividan en dos líneas */
+    justify-content: center; /* Asegurar alineación centrada */
+    gap: 10px; /* Reducir espacio entre opciones */
   }
 
   .navList a {
-    font-size: 14px;
-    border-radius: 5px;
+    font-size: 14px; /* Reducir tamaño del texto */
+    padding: 8px 10px; /* Ajustar padding para ahorrar espacio */
+  }
+
+  .navbar {
+    width: 90%; /* Asegurar que el navbar ocupe todo el ancho */
+    padding: 10px; /* Ajustar padding */
   }
 
   .navbarContainer {
-    padding: 0; /* Elimina el padding horizontal */
-  }
-
-  /* Opcional: Agregar un menú de hamburguesa para móviles */
-  .navbar {
-    padding: 10px; /* Ajusta el padding para la versión móvil */
-  }
-
-  .navList {
-    padding: 0; /* Elimina el padding de la lista en móviles */
+    max-width: 90%; /* Evitar que el contenedor sea más ancho de lo necesario */
   }
 }

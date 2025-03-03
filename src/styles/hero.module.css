@@ -74,3 +74,28 @@ h3 {
     font-size: 1rem;
   }
 }
+
+.workAvailableTag {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: transparent;
+  color: white; /* Color del texto siempre blanco */
+  border: 2px solid #28a745; /* Borde verde inicial */
+  border-radius: 20px;
+  animation: borderPulse 1.5s infinite; /* Animación de pulso siempre activa */
+}
+
+/* Animación de pulso */
+@keyframes borderPulse {
+  0% {
+    border-color: #28a745; /* Verde */
+  }
+  50% {
+    border-color: white; /* Blanco */
+  }
+  100% {
+    border-color: #28a745; /* Verde */
+  }
+}
