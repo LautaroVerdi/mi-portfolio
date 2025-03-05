@@ -15,7 +15,7 @@ export const portfolioData = {
     name: "Lautaro Agustín Verdi",
     role: "Licenciado en Informática y Desarrollador Full Stack.",
     aboutme:
-      "Soy Licenciado en Informática y Desarrollador Full Stack con experiencia en tecnologías como React, React Native, Next.js, Nest.js, Node.js y Python. Aunque tengo un enfoque Full Stack, mi verdadera pasión está en el desarrollo de interfaces de usuario intuitivas y atractivas. Me especializo en la creación de aplicaciones escalables y eficientes, optimizando procesos y resolviendo problemas tecnológicos. Busco contribuir a proyectos que combinen diseño y funcionalidad para generar impacto positivo.",
+      "Experiencia en tecnologías como React, React Native, Next.js, Nest.js, Node.js y Python. Aunque tengo un enfoque Full Stack, mi verdadera pasión está en el desarrollo de interfaces de usuario intuitivas y atractivas. Me especializo en la creación de aplicaciones escalables y eficientes, optimizando procesos y resolviendo problemas tecnológicos. Busco contribuir a proyectos que combinen diseño y funcionalidad para generar impacto positivo.",
     image: "/profile.jpg",
   },
   contact: {

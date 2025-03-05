@@ -5,8 +5,8 @@
   padding: 100px 20px 20px 20px;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 800px; /* Limita el ancho total */
-  margin: 0 auto; /* Centra en la página */
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .image {
@@ -19,13 +19,14 @@
 
 .textContainer {
   text-align: center;
-  max-width: 700px; /* Limita el ancho del texto */
+  max-width: 700px;
 }
 
 .aboutMeContainer {
-  max-width: 700px; /* Misma anchura que el texto */
+  max-width: 700px;
   text-align: center;
-  margin-top: 10px; /* Espacio entre nombre y about me */
+  margin-top: 10px;
+  line-height: 24px;
 }
 
 h1 {
@@ -59,7 +60,7 @@ h3 {
 
   .textContainer,
   .aboutMeContainer {
-    max-width: 700px; /* Ajuste para pantallas pequeñas */
+    max-width: 700px;
   }
 
   h1 {
@@ -81,21 +82,21 @@ h3 {
   font-size: 16px;
   font-weight: bold;
   background-color: transparent;
-  color: white; /* Color del texto siempre blanco */
-  border: 2px solid #28a745; /* Borde verde inicial */
+  color: white;
+  border: 2px solid #28a745;
   border-radius: 20px;
-  animation: borderPulse 1.5s infinite; /* Animación de pulso siempre activa */
+  animation: borderPulse 1.5s infinite;
 }
 
 /* Animación de pulso */
 @keyframes borderPulse {
   0% {
-    border-color: #28a745; /* Verde */
+    border-color: #28a745;
   }
   50% {
-    border-color: white; /* Blanco */
+    border-color: white;
   }
   100% {
-    border-color: #28a745; /* Verde */
+    border-color: #28a745;
   }
 }
