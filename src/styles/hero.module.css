@@ -9,14 +9,6 @@
   margin: 0 auto;
 }
 
-.image {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  margin-right: 20px;
-  object-fit: cover;
-}
-
 .textContainer {
   text-align: center;
   max-width: 700px;
@@ -53,11 +45,6 @@ h3 {
     text-align: center;
   }
 
-  .image {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
   .textContainer,
   .aboutMeContainer {
     max-width: 700px;
@@ -76,27 +63,54 @@ h3 {
   }
 }
 
-.workAvailableTag {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  background-color: transparent;
-  color: white;
-  border: 2px solid #28a745;
-  border-radius: 20px;
+.imageContainer {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+  border: 12px solid #28a745;
+  box-shadow: 0 0 15px rgba(40, 167, 69, 0.5);
   animation: borderPulse 1.5s infinite;
 }
 
-/* Animación de pulso */
 @keyframes borderPulse {
   0% {
+    box-shadow: 0 0 10px #28a745;
     border-color: #28a745;
   }
   50% {
-    border-color: white;
+    box-shadow: 0 0 20px #2b6d3a;
+    border-color: #2b6d3a;
   }
   100% {
+    box-shadow: 0 0 10px #28a745;
     border-color: #28a745;
   }
+}
+
+.textCircle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.textCircle text {
+  fill: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }

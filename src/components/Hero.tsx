@@ -1,31 +1,48 @@
 import React from "react";
 import styles from "../styles/hero.module.css";
-import { portfolioData } from "../data.tsx";
 import stylesContact from "../styles/contact.module.css";
 import { FaGithub, FaLinkedin, FaEnvelope, FaFileAlt } from "react-icons/fa";
+import { portfolioData } from "../data.tsx";
 
 const Hero: React.FC = () => {
   return (
     <section className={styles.hero}>
-      <img
-        src={portfolioData.hero.image}
-        alt="Perfil"
-        className={styles.image}
-      />
+      {/* Contenedor con imagen y texto circular */}
+      <div className={styles.imageContainer}>
+        <img
+          src={portfolioData.hero.image}
+          alt="Perfil"
+          className={styles.image}
+        />
+        <svg viewBox="0 0 200 200" className={styles.textCircle}>
+          <defs>
+            <path
+              id="circlePath"
+              d="M 100, 100
+                 m -80, 0
+                 a 80,80 0 1,1 160,0
+                 a 80,80 0 1,1 -160,0"
+            />
+          </defs>
+          <text fill="#28a745" fontSize="14" fontWeight="bold">
+            <textPath href="#circlePath" startOffset="25%" textAnchor="middle">
+              Disponible para trabajar
+            </textPath>
+          </text>
+        </svg>
+      </div>
+
       <div className={styles.textContainer}>
         <h1>{portfolioData.hero.name}</h1>
         <h2>{portfolioData.hero.role}</h2>
       </div>
-
-      {/* Botón no pulsable tipo "tag" */}
-      <div className={styles.workAvailableTag}>Disponible para trabajar</div>
 
       <div className={styles.aboutMeContainer}>
         <h3>{portfolioData.hero.aboutme}</h3>
       </div>
 
       <section className={stylesContact.contact}>
-        {/* Botón con ícono para Email */}
+        {/* Botones de contacto */}
         <a
           href={`mailto:${portfolioData.contact.email}`}
           className={stylesContact.contactLink}
@@ -33,7 +50,6 @@ const Hero: React.FC = () => {
           <FaEnvelope className={stylesContact.icon} /> Email
         </a>
 
-        {/* Botón con ícono para GitHub */}
         <a
           href={portfolioData.contact.github}
           target="_blank"
@@ -43,7 +59,6 @@ const Hero: React.FC = () => {
           <FaGithub className={stylesContact.icon} /> GitHub
         </a>
 
-        {/* Botón con ícono para LinkedIn */}
         <a
           href={portfolioData.contact.linkedin}
           target="_blank"
@@ -53,7 +68,6 @@ const Hero: React.FC = () => {
           <FaLinkedin className={stylesContact.icon} /> LinkedIn
         </a>
 
-        {/* Botón con ícono para CV */}
         <a
           href={portfolioData.contact.cv}
           target="_blank"
