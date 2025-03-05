@@ -24,7 +24,6 @@
   transform: translateY(-5px);
 }
 
-/* Contenedor del título y el año en una sola fila */
 .cardHeader {
   display: flex;
   justify-content: space-between;
@@ -54,10 +53,8 @@
 .textContainer p {
   font-size: 16px;
   margin: 0;
-  /* color: #b4b4b4; */
 }
 
-/* Imagen alineada debajo */
 .imageContainer {
   width: 100%;
   margin-top: 15px;
