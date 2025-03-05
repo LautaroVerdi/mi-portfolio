@@ -1,62 +1,126 @@
 .education {
   text-align: center;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Asegura que todo esté centrado */
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 20px;
+  margin-bottom: 20px;
 }
 
 .eduItem {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
   display: flex;
-  justify-content: center; /* Centra el contenido horizontalmente */
-  align-items: center; /* Alinea verticalmente */
-  gap: 30px; /* Espacio entre el texto y la imagen */
-  margin-bottom: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.3s;
+  margin: 0 auto;
   padding: 20px;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.1); /* Sin fondo */
-  width: 100%; /* Ancho adaptable al contenedor */
-  max-width: 700px; /* Ancho máximo para pantallas grandes */
 }
 
-.textContainer {
-  flex: 1;
-  text-align: right; /* Mantiene el texto alineado */
-  max-width: 350px; /* Limita el tamaño del texto */
+.eduItem:hover {
+  transform: translateY(-5px);
 }
 
-.imageContainer {
-  flex: 1;
+/* Contenedor del título y el año en una sola fila */
+.cardHeader {
   display: flex;
-  margin-left: 30px;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.cardHeader h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.date {
+  font-size: 14px;
+  color: #b4b4b4;
+  text-align: right;
+}
+
+/* Contenedor del texto */
+.textContainer {
+  width: 100%;
+  padding: 0 10px;
+  text-align: left;
+}
+
+.textContainer p {
+  font-size: 16px;
+  margin: 0;
+  /* color: #b4b4b4; */
+}
+
+/* Imagen alineada debajo */
+.imageContainer {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
 }
 
 .educationImage {
-  max-width: 200px;
+  width: 45%;
   height: auto;
+  margin-top: 15px;
   border-radius: 8px;
 }
 
-.eduItem span {
-  font-style: italic;
-  color: #b4b4b4;
+.roleAndResponsibilities {
+  width: 100%;
+  padding: 0 10px;
 }
 
-/* 📱 Estilos para pantallas más pequeñas */
-@media (max-width: 600px) {
+.responsibilities ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 20px;
+  text-align: left;
+  line-height: 24px;
+}
+
+.responsibilities ul li {
+  margin-bottom: 10px;
+}
+
+/* 📱 Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  .education {
+    padding: 20px;
+  }
+
   .eduItem {
-    flex-direction: column; /* Apila los elementos en mobile */
-    text-align: center;
-    gap: 15px; /* Reduce el espacio entre elementos */
+    width: 90%;
+    padding: 15px;
+    max-width: 90%;
   }
 
-  .textContainer {
-    text-align: center; /* Centra el texto en mobile */
-    max-width: 100%;
+  .cardHeader {
+    flex-direction: row;
+    justify-content: space-between;
   }
 
-  .educationImage {
-    max-width: 150px; /* Reduce el tamaño de la imagen en mobile */
+  .cardHeader h3 {
+    font-size: 16px;
+  }
+
+  .date {
+    font-size: 12px;
+  }
+
+  .textContainer p {
+    font-size: 14px;
+  }
+
+  .responsibilities ul {
+    margin-left: 10px;
+    padding-left: 10px;
+    text-align: left;
   }
 }

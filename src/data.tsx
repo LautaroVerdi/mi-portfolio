@@ -16,7 +16,7 @@ export const portfolioData = {
     role: "Licenciado en Informática y Desarrollador Full Stack.",
     aboutme:
       "Experiencia en tecnologías como React, React Native, Next.js, Nest.js, Node.js y Python. Aunque tengo un enfoque Full Stack, mi verdadera pasión está en el desarrollo de interfaces de usuario intuitivas y atractivas. Me especializo en la creación de aplicaciones escalables y eficientes, optimizando procesos y resolviendo problemas tecnológicos. Busco contribuir a proyectos que combinen diseño y funcionalidad para generar impacto positivo.",
-    image: "/profile.jpg",
+    image: "/profile.webp",
   },
   contact: {
     email: "lautaroverdii@gmail.com",
@@ -44,7 +44,7 @@ export const portfolioData = {
         { logo: FirebaseIcon, name: "Firebase" },
         { logo: ReactIcon, name: "React" },
       ],
-      image: "/dentalai.jpg",
+      image: "/dentalai.webp",
       link: "",
       androidLink: "",
       iosLink: "",
@@ -64,7 +64,7 @@ export const portfolioData = {
         { logo: PostgreSQLIcon, name: "PostgreSQL" },
         { logo: MinioIcon, name: "MinIO" },
       ],
-      image: "/mic.png",
+      image: "/mic.webp",
       link: "https://mapainteractivocultural.ar/",
       androidLink:
         "https://play.google.com/store/apps/details?id=ar.mapainteractivocultural.twa&hl=es_AR",
@@ -82,7 +82,7 @@ export const portfolioData = {
         { logo: ReactIcon, name: "React Native" },
         { logo: FirebaseIcon, name: "Firebase" },
       ],
-      image: "agrotour.jpg",
+      image: "agrotour.webp",
       link: "https://agrotour.com.ar/",
       androidLink:
         "https://play.google.com/store/apps/details?id=com.AgroTour&hl=es_SV",
@@ -97,7 +97,7 @@ export const portfolioData = {
         "Gestión y despliegue de la aplicación en las stores Play Console y App Connect.",
       ],
       technologies: [{ logo: ReactIcon, name: "React Native" }],
-      image: "/agroinfinito.png",
+      image: "/agroinfinito.webp",
       link: "https://agroinfinito.com.ar/",
       androidLink:
         "https://play.google.com/store/apps/details?id=com.Agroinfinito",
@@ -116,7 +116,7 @@ export const portfolioData = {
         { logo: PostgreSQLIcon, name: "PostgreSQL" },
         { logo: MongoDBIcon, name: "MongoDB" },
       ],
-      image: "anp.jpg",
+      image: "anp.webp",
       link: "",
       androidLink: "",
       iosLink: "",
@@ -127,7 +127,12 @@ export const portfolioData = {
       degree: "Licenciatura en Informática",
       institution: "UNPSJB - Puerto Madryn, Chubut",
       year: "03/2017 - 12/2024",
-      image: "/recibida.jpg",
+      image: "/recibida.webp",
+      projects: [
+        "Sistema de gestión de taxis con seguimiento GPS en tiempo real. Plataforma web para administración. Aplicaciones móviles para taxistas y pasajeros, desarrolladas con Ionic.",
+        "Sistema de seguimiento deportivo para jugadores. Permite la gestión de grupos, planificación de entrenamientos, registro de asistencias (manual y automática mediante geolocalización) y generación de reportes sobre el rendimiento de los jugadores. Desarrollada con Android Studio.",
+        "Sistema de segmentación automática de piezas dentales en una pantomografía utilizando inteligencia artificial. El modelo fue capaz de identificar y clasificar los dientes, implementado con las bibliotecas MMDet y Pytorch. Este proyecto fue parte de mi tesina de grado.",
+      ],
     },
   ],
 };

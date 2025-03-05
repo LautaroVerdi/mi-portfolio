@@ -1,7 +1,7 @@
 .projects {
   text-align: center;
   display: grid;
-  grid-template-columns: 1fr; /* Una sola columna */
+  grid-template-columns: 1fr;
   gap: 20px;
   margin-bottom: 20px;
 }
@@ -10,14 +10,14 @@
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100%; /* Ancho adaptable al contenedor */
-  max-width: 700px; /* Ancho máximo para pantallas grandes */
+  width: 100%;
+  max-width: 700px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   transition: transform 0.3s;
-  margin: 0 auto; /* Centra las tarjetas */
-  padding: 20px; /* Añadido padding en la tarjeta */
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .projectCard:hover {
@@ -34,13 +34,13 @@
 .cardHeader h3 {
   font-size: 18px;
   font-weight: bold;
-  margin: 0; /* Eliminar margen en el título */
+  margin: 0;
 }
 
 .date {
   font-size: 14px;
   color: #b4b4b4;
-  margin-left: 20px; /* Para que no quede pegado al título */
+  margin-left: 20px;
 }
 
 .roleAndResponsibilities {
@@ -50,61 +50,62 @@
 
 .responsibilities ul {
   list-style-type: disc;
-  margin-left: 20px; /* Alineación a la izquierda */
-  padding-left: 20px; /* Añadir espacio extra a la izquierda */
-  text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+  margin-left: 20px;
+  padding-left: 20px;
+  text-align: left;
+  line-height: 24px;
 }
 
 .responsibilities ul li {
-  margin-bottom: 10px; /* Espacio entre los ítems de la lista */
+  margin-bottom: 10px;
 }
 
 .imageContainer {
   width: 100%;
   margin-top: 15px;
   display: flex;
-  justify-content: center; /* Centra la imagen horizontalmente */
+  justify-content: center;
 }
 
 .projectImage {
-  width: 75%; /* Establece el ancho de la imagen al 75% del contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
+  width: 75%;
+  height: auto;
   margin-top: 15px;
   border-radius: 8px;
 }
 
 .techStack {
   display: flex;
-  justify-content: center; /* Centra los logos horizontalmente */
-  align-items: center; /* Centra los logos verticalmente */
-  gap: 15px; /* Espacio entre los elementos */
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
   margin-top: 15px;
-  width: 100%; /* Aseguramos que ocupe todo el ancho disponible */
-  flex-wrap: wrap; /* Permite que los logos se ajusten a varias líneas si es necesario */
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .techItem {
   display: flex;
-  justify-content: center; /* Centra el contenido dentro de cada item */
-  align-items: center; /* Asegura la alineación vertical */
-  gap: 10px; /* Espacio entre el logo y el texto */
-  border: 1px solid #b4b4b4; /* Borde blanco alrededor de cada item */
-  border-radius: 30px; /* Bordes redondeados */
-  padding: 5px 10px; /* Padding alrededor */
-  background-color: transparent; /* Fondo transparente por defecto */
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #b4b4b4;
+  border-radius: 30px;
+  padding: 5px 10px;
+  background-color: transparent;
 }
 
 .techLogo {
   width: 25px;
   height: 25px;
-  border-radius: 50%; /* Hace que el logo sea circular */
-  fill: #b4b4b4; /* Fondo blanco */
+  border-radius: 50%;
+  fill: #b4b4b4;
 }
 
 .techLogo img {
-  width: 100%; /* La imagen ocupa todo el contenedor */
-  height: 100%; /* La imagen ocupa todo el contenedor */
-  object-fit: contain; /* Mantiene la proporción de la imagen */
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .techName {
@@ -114,28 +115,23 @@
 }
 
 .techItem:hover {
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.1
-  ); /* Fondo sutil al pasar el mouse */
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .projectLinks {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  justify-content: center; /* Esto asegura que los enlaces estén centrados */
+  justify-content: center;
   flex-wrap: wrap;
   margin-top: 20px;
-  width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho disponible */
+  width: 100%;
 }
 
 .projectLink {
   display: flex;
   align-items: center;
-  justify-content: center; /* Centra los íconos y texto dentro del enlace */
+  justify-content: center;
   color: #fff;
   text-decoration: none;
   font-size: 1.2rem;
@@ -146,9 +142,9 @@
 }
 
 .icon {
-  margin-right: 10px; /* Espacio entre el ícono y el texto */
+  margin-right: 10px;
   color: inherit;
-  font-size: 30px; /* Tamaño del ícono */
+  font-size: 30px;
 }
 
 .projectLink:hover {
@@ -158,51 +154,51 @@
 }
 
 .projectLink:hover .icon {
-  color: #282c34; /* Cambia el color del ícono cuando el enlace se pasa por encima */
+  color: #282c34;
 }
 
 /* Media Queries para dispositivos móviles */
 @media (max-width: 768px) {
   .projects {
-    padding: 20px; /* Reducir el padding */
+    padding: 20px;
   }
 
   .projectCard {
-    width: 90%; /* Las tarjetas ocupan todo el ancho disponible en móviles */
-    padding: 15px; /* Reducir padding */
-    max-width: 90%; /* Elimina el máximo ancho para pantallas pequeñas */
+    width: 90%;
+    padding: 15px;
+    max-width: 90%;
   }
 
   .cardHeader {
-    flex-direction: column; /* Apilar título y fecha en lugar de alinearlos horizontalmente */
+    flex-direction: column;
     align-items: flex-start;
   }
 
   .cardHeader h3 {
-    font-size: 16px; /* Reducir tamaño del título */
+    font-size: 16px;
   }
 
   .date {
-    margin-left: 0; /* Quitar margen en dispositivos móviles */
+    margin-left: 0;
   }
 
   .responsibilities ul {
-    margin-left: 10px; /* Alineación a la izquierda */
-    padding-left: 10px; /* Añadir espacio extra a la izquierda */
-    text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+    margin-left: 10px;
+    padding-left: 10px;
+    text-align: left;
   }
 
   .techStack {
-    gap: 10px; /* Reducir el espacio entre los logos */
+    gap: 10px;
   }
 
   .techLogo {
-    width: 25px; /* Reducir el tamaño de los logos */
+    width: 25px;
     height: 25px;
   }
 
   .techName {
-    font-size: 12px; /* Reducir el tamaño del texto */
+    font-size: 12px;
   }
 
   .projectLinks {

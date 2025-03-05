@@ -10,16 +10,31 @@ const Education: React.FC = () => {
       {portfolioData.education.map((edu, index) => (
         <div key={index} className={styles.eduItem}>
           <div className={styles.textContainer}>
-            <h3>{edu.degree}</h3>
+            {/* Contenedor que alinea el título y la fecha */}
+            <div className={styles.cardHeader}>
+              <h3>{edu.degree}</h3>
+              <span className={styles.date}>{edu.year}</span>
+            </div>
+            {/* Institución debajo del título */}
             <p>{edu.institution}</p>
-            <span>{edu.year}</span>
+            <br></br>
           </div>
 
-          {/* Imagen para cada item de formación */}
+          {/* Proyectos enumerados */}
+          <div className={styles.roleAndResponsibilities}>
+            <div className={styles.responsibilities}>
+              <ul>
+                {edu.projects.map((project, i) => (
+                  <li key={i}>{project}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          {/* Imagen debajo */}
           {edu.image && (
             <div className={styles.imageContainer}>
               <img
-                src={edu.image} // Ruta de la imagen desde la carpeta "public/images"
+                src={edu.image}
                 alt={`Imagen de ${edu.degree}`}
                 className={styles.educationImage}
               />
